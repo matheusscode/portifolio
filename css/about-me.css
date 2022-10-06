@@ -27,6 +27,12 @@ h2 {
   width: 323px;
   height: 368px;
   position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
 }
 
 .me-bg {
