@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #080713;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-credits {
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin-top: 30px;
+}
+
+.contact-credits p {
+  margin-top: 3px;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 25px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: 170px;
+  }
+
+  .contact-credits {
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+}
+
+.links1,
+.links2 {
+  height: 52px;
+  width: 52px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.links:hover {
+  transform: rotate(-360deg);
+}
+
+.links1 {
+  background-image: url(../assets/img/footer/githubff2.svg);
+}
+
+.links2 {
+  background-image: url(../assets/img/footer/linkedinff2.svg);
+}
+
+.transparent {
+  transition: ease-in-out 0.3s;
+  width: 60px;
+  height: 60px;
+}
+
+.transparent:hover {
+  opacity: 0;
+}
+
+@media (max-width: 950px) {
+  .footer-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer {
+    height: 200px;
+    width: 100%;
+  }
+}

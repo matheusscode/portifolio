@@ -1,0 +1,148 @@
+#skills {
+  background-color: #0b0a17;
+}
+
+.skills-pd {
+  padding-top: 53px;
+  padding-bottom: 90px;
+}
+
+.skills-pd h2 {
+  text-align: center;
+  padding-bottom: 70px;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.skills-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 50px;
+  padding-bottom: 70px;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  flex-wrap: wrap;
+  gap: 37px;
+  max-width: 55%;
+}
+
+.skill-box {
+  height: 106px;
+  width: 106px;
+  background: #080713;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease 0.3s;
+}
+
+.skill-box:hover {
+  background-color: #0c0a24;
+  transform: scale(1.05);
+}
+
+.container-description {
+  color: aliceblue;
+  font-size: 20px;
+  max-width: 40%;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .container-description {
+    width: 230px;
+    height: 200px;
+  }
+
+  #skills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-description {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 50px;
+    padding-bottom: 70px;
+    align-items: center;
+  }
+
+  .skills-description p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 300px;
+  }
+
+  .container-description {
+    max-width: 300px;
+  }
+}
+
+.skill-box .icon-skills {
+  transition: ease-in-out 0.3s;
+  width: 73px;
+  height: 74px;
+}
+
+.skill-box:hover .icon-skills {
+  opacity: 0;
+}
+
+.skill1 {
+  background-image: url(../assets/img/icon-skills/view/html5.png);
+}
+
+.skill2 {
+  background-image: url(../assets/img/icon-skills/view/css.png);
+}
+
+.skill3 {
+  background-image: url(../assets/img/icon-skills/view/js.png);
+}
+
+.skill4 {
+  background-image: url(../assets/img/icon-skills/view/reactjs.png);
+}
+
+/*
+
+.skill5{
+  background-image: url(../img/icon-skills/view/reactjs.png);
+}
+
+.skill6{
+  background-image: url(../img/icon-skills/view/mysql.png);
+}
+
+.skill7{
+  background-image: url(../img/icon-skills/view/git.png);
+}
+
+.skill8{
+  background-image: url(../img/icon-skills/view/github1.png);
+}
+
+*/
+
+@media (max-width: 500px) {
+  #skills {
+    height: 115vh;
+  }
+}
